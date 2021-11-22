@@ -161,12 +161,9 @@ body {
 
 /* ================================Styles Product====================================*/
 
-. {
-    background-image: url(../images/oringVariedades-color.jpg);
-}
-
 .content-carousel {
-    background-color: #000;
+    /* background-image: url(../images/oringVariedades-color.jpg); */
+    background-color: rgba(155, 154, 154, 0.522);
     margin: 0;
     padding: 0;
     width: 100%;

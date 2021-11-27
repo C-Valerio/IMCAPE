@@ -3,5 +3,7 @@ Content-Type: application/json
 
 {
     "nombre":"certus",
-    "curso" : "Desarrollo multiplataforma"
+    "Email" : "Desarrollo multiplataforma",
+    "Asunto": "hello",
+    "Mensaje": "mundo"
 }

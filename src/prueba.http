@@ -1,0 +1,7 @@
+POST http://localhost:3000/insertar
+Content-Type: application/json
+
+{
+    "nombre":"certus",
+    "curso" : "Desarrollo multiplataforma"
+}

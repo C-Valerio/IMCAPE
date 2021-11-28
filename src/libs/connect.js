@@ -6,7 +6,7 @@ let client;
 module.exports = function(){
     if(!client){
         try{
-            client = new MongoClient(uri,{userNewUrlParser:true,useUnifiedTopolgu:true});
+            client = new MongoClient(uri,{userNewUrlParser:true,useUnifiedTopology:true});
         } catch(e){
             console.log("Error al conectarse a la BD", e)
         }

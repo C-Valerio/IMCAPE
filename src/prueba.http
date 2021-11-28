@@ -1,9 +1,9 @@
-POST http://localhost:3000/insertar
+POST http://localhost:3000/contacto
 Content-Type: application/json
 
 {
-    "nombre":"certus",
-    "Email" : "Desarrollo multiplataforma",
-    "Asunto": "hello",
-    "Mensaje": "mundo"
+    "Tu nombre": "",
+    "Tu Email": "",
+    "Asunto": "",
+    "Tu mensaje": ""
 }

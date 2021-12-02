@@ -21,27 +21,25 @@ router.get('/noticias',(req,res) =>{
 router.get('/servicios',(req,res) =>{
     res.render("servicios")  
 })
-router.post('/insertar', (req,res) =>{
-    client.connect(async (err)=>{
-        if(!err){
-        const collection = client.db("test").collection("alumno")
-        collection.insertOne(req.body)
-        res.send("resultado:[{'respuesta':'ok'}]")
-    } else{
-        res.send("resultado:[{'respuesta':'Error al cargar'},{'mensaje':" + err +"}]")
-    }
-    })
-})
+// router.post('/insertar', (req,res) =>{
+//     client.connect(async (err)=>{
+//         if(!err){
+//         const collection = client.db("test").collection("alumno")
+//         collection.insertOne(req.body)
+//         res.send("resultado:[{'respuesta':'ok'}]")
+//     } else{
+//         res.send("resultado:[{'respuesta':'Error al cargar'},{'mensaje':" + err +"}]")}
+//     })
+// })
 
 router.post('/contacto', (req,res) =>{
     client.connect(async (err)=>{
         if(!err){
         const collection = client.db("test").collection("alumno")
         collection.insertOne(req.body)
-        res.send("resultado:[{'respuesta':'ok'}]")
+        res.render("contacto")
     } else{
-        res.send("resultado:[{'respuesta':'Error al cargar'},{'mensaje':" + err +"}]")
-    }
+        res.send("resultado:[{'respuesta':'Error al cargar'},{'mensaje':" + err +"}]")}
     })
 })
 router.post('/listarAlumnos', (req,res) =>{

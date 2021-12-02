@@ -9,6 +9,9 @@ const client = require('../libs/connect')()
 router.get('/', (req,res) => {
     res.render('index') 
 })
+router.get('/index', (req,res) => {
+    res.render('index') 
+})
 router.get('/contacto',(req,res)=>{
     res.render('contacto')
 })
